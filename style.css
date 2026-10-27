@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.products-side {
+  flex: 3;
+}
+
+.cart-side {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  height: fit-content;
+}
+
+/* Filter bar */
+.filters {
+  margin-bottom: 15px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 3px;
+}
+
+/* Product cards */
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Cart items */
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  width: 100%;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.coupon {
+  margin-top: 10px;
+}
+
+/* Checkout form */
+.checkout-box {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  background: white;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.checkout-box input {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+}
